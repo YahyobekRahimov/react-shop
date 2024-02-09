@@ -1,6 +1,11 @@
-import Container from "./ui/Container";
-import Header from "./ui/Header";
+"use client";
+
+import { useRouter } from "next/navigation";
+import { useEffect } from "react";
 
 export default function Home() {
-   return <Header />;
+   const router = useRouter();
+
+   router.push("/products");
+   return <></>;
 }
