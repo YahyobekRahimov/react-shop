@@ -64,7 +64,7 @@ export default function ThemeSwitcher() {
          }}
          value={theme}
       >
-         <SelectTrigger className="w-[180px]">
+         <SelectTrigger className="w-[6rem]">
             <SelectValue placeholder="Theme" />
          </SelectTrigger>
          <SelectContent>
