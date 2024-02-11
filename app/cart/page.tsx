@@ -1,3 +1,11 @@
+import Header from "../ui/Header";
+import Products from "./Products";
+
 export default function page() {
-   return <div>page</div>;
+   return (
+      <>
+         <Header />
+         <Products />
+      </>
+   );
 }

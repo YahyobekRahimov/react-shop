@@ -1,9 +1,11 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { Product, ProductInCart } from "../type/types";
 
-export default function AddToCardButton(product: Product) {
+export default function AddToCardButton(
+   product: Product | ProductInCart
+) {
    const { id } = product;
    const [quantity, setQuantity] = useState(getQuantity());
    function getQuantity(): number {
@@ -46,9 +48,7 @@ export default function AddToCardButton(product: Product) {
             const index = productsInCart.findIndex(
                (product) => product.id === id
             );
-            console.log(49, index);
             if (index === -1) {
-               console.log("item not found");
                productsInCart.push({
                   ...product,
                   quantity: quantity,
@@ -57,7 +57,6 @@ export default function AddToCardButton(product: Product) {
             } else {
                productsInCart[index].quantity = quantity;
                updatedProducts = productsInCart;
-               console.log(productsInCart);
             }
          }
          localStorage.setItem(

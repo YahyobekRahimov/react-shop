@@ -9,6 +9,8 @@ export default function CartButton() {
    const handleClick = () => {
       router.push("/cart");
    };
+   const items =
+      JSON.parse(localStorage.getItem("products_in_cart")!) || [];
    return (
       <button
          type="button"
@@ -19,7 +21,7 @@ export default function CartButton() {
             className="absolute bg-fuchsia-800 hover:bg-fuchsia-900 text-white py-[0.05rem] px-[0.3rem] top-[-0.5rem] right-[-0.5rem] text-sm"
             variant="secondary"
          >
-            0
+            {items.length ?? 0}
          </Badge>
          <svg
             stroke="currentColor"

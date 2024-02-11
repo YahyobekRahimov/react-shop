@@ -1,12 +1,12 @@
 import Link from "next/link";
-import { Product } from "../type/types";
+import { Product, ProductInCart } from "../type/types";
 import AddToCardButton from "./AddToCardButton";
 
 export default function ProductCard({
    product,
    key,
 }: {
-   product: Product;
+   product: Product | ProductInCart;
    key: number;
 }) {
    return (
