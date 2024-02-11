@@ -16,3 +16,13 @@ export interface Category {
    creationAt: string;
    updatedAt: string;
 }
+
+export interface ProductInCart {
+   id: number;
+   title: string;
+   price: number;
+   description: string;
+   category: Category;
+   images: string[];
+   quantity: number;
+}

@@ -46,7 +46,7 @@ export default function ProductCard({
                   $ {product.price}
                </span>
             </div>
-            <AddToCardButton id={product.id} />
+            <AddToCardButton {...product} />
          </div>
       </div>
    );

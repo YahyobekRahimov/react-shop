@@ -5,7 +5,7 @@ export default function SearchInput() {
             <svg
                stroke="currentColor"
                fill="currentColor"
-               stroke-width="0"
+               strokeWidth="0"
                version="1.1"
                id="search"
                x="0px"

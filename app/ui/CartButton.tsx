@@ -24,7 +24,7 @@ export default function CartButton() {
          <svg
             stroke="currentColor"
             fill="currentColor"
-            stroke-width="0"
+            strokeWidth="0"
             viewBox="0 0 24 24"
             className="text-4xl dark:bg-slate-900 bg-white dark:bg-grayshade-400 border border-grayshade-200 p-1 rounded-md"
             height="1em"
